@@ -1,0 +1,50 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Root-level ignores
+.env              # Global environment files
+*.pyc             # Compiled Python files
+__pycache__/      # Python cache directories
+*.pyo             # Optimized Python files
+*.pyd             # Python dynamic libraries (Windows)
+.Python           # Python user configuration
+pip-wheel-metadata/
+dist/             # Python distribution files
+build/            # Global build directory (if any at root level)
+
+# Frontend (React) specific ignores
+/frontend/node_modules/
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/coverage/
+frontend/build/   # React build output (scoped to frontend/)
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Backend (Flask/Python) specific ignores
+/backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+/backend/.Python
+/backend/pip-wheel-metadata/
+backend/dist/
+
+# Testing
+/coverage         # Root-level test coverage (if any outside frontend)
+
+/frontend/.DS_Store
+/backend/.DS_Store
+.DS_Store         # macOS metadata files (global)
+
+# Local environment files (scoped to frontend)
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Local environment files (scoped to backend, if any)
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
